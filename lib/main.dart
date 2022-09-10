@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:roadmap/navigation/Advanced/job_page.dart';
 
 import 'package:roadmap/navigation/named_routes.dart';
+import 'package:roadmap/navigation1/home_screen.dart';
 
 import 'navigation/advanced/job_card.dart';
 
@@ -24,15 +25,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //initialRoute: Route1.id,
-      initialRoute: JobForm.id,
-      routes: {
-        Route1.id: (context) => const Route1(),
-        Route2.id: (context) => const Route2(),
-        JobForm.id: (context) => const JobForm(),
-        JobCard.id: (context) => const JobCard(),
-      },
-      home: JobForm(),
+      
+      // initialRoute: JobForm.id,
+      // routes: {
+      //   Route1.id: (context) => const Route1(),
+      //   Route2.id: (context) => const Route2(),
+      //   JobForm.id: (context) => const JobForm(),
+      //   JobCard.id: (context) => const JobCard(),
+      // },
+      home: const HomeScreen(),
     );
   }
 }
